@@ -1,11 +1,12 @@
 import { ReactNode } from 'react';
+import StepOne from './StepOne';
 
 import { Container } from './styles';
 
 function Form() {
     return (
         <Container>
-            <h1>Form</h1>
+            <StepOne />
         </Container>
     );
 }
