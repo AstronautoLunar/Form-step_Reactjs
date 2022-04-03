@@ -7,12 +7,19 @@ function CheckBox({ label, checked = false }: TypeCheckBox) {
     const [stateChecked, setStateChecked] = useState(checked);
     return (
         <Container
-            control={<Check defaultChecked size="medium" />}
+            control={<Check size="medium" />}
             label={label}
-            checked={stateChecked}
             onChange={() => setStateChecked(!stateChecked)}
+            checked={stateChecked}
         />
     );
 }
+
+/**
+ * A prop "checked" está entrando em um certo
+ * conflito com o "defaultChecked" do componente
+ * Check dentro da prop "control" do componente Container
+ * por isso o defaultChecked foi removido do componente Check
+ */
 
 export default CheckBox;

@@ -16,4 +16,8 @@ export const Container = styled(FormControlLabel)`
         `}
 `;
 
+type ContainerBorderColorProps = {
+    checkedContainer: boolean;
+};
+
 export const Check = styled(Checkbox)``;

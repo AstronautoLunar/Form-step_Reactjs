@@ -1,7 +1,13 @@
+import { Dispatch } from 'react';
 import { data } from '../context/FormContext/data';
-import { TypeActionsForm } from './TypeActionsForm';
+import { EnumTypesForm } from '../context/FormContext/types';
 
 export type TypeContextForm = {
     stateForm: typeof data;
-    dispatchForm: TypeActionsForm;
+    dispatchForm: Dispatch<ITaskAction>;
 };
+
+export interface ITaskAction {
+    type: EnumTypesForm;
+    payload: typeof data;
+}

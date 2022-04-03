@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
 import StepOne from './StepOne';
 
 import { Container } from './styles';
+import { useForm } from '../../context/FormContext';
 
 function Form() {
     return (
