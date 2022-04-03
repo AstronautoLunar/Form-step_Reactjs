@@ -6,7 +6,6 @@ import { data } from './data';
 export const reducer: Reducer<typeof data, ITaskAction> = (state, action) => {
     switch (action.type) {
         case EnumTypesForm.CHANGE_OPTIONS:
-            console.log(state);
             return state;
         default:
             return state;

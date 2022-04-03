@@ -8,6 +8,7 @@ export default function AppRoutes() {
             <Header />
             <Routes>
                 <Route path="/:id" element={<Form />} />
+                <Route path="/" element={<h1>Clique na rota acima</h1>} />
             </Routes>
         </Router>
     );
